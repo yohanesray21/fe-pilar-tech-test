@@ -18,7 +18,7 @@ export default function HomePage() {
               <Center>
                 <Text fontSize="xl">Select User For Chat : </Text>
               </Center>
-              <Link href="/ChatApp/Alice">
+              <Link href="/ChatApp/Alice" target="_blank">
                 <Button
                   bgColor="#373E4E"
                   borderRadius="20px"
@@ -31,7 +31,7 @@ export default function HomePage() {
                   </Center>
                 </Button>
               </Link>
-              <Link href="ChatApp/John">
+              <Link href="ChatApp/John" target="_blank">
                 <Button
                   bgColor="#272A35"
                   borderRadius="20px"
