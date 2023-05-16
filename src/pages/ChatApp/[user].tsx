@@ -11,6 +11,7 @@ import {
 import { FormEvent, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { ArrowBackIcon } from '@chakra-ui/icons';
+import Link from 'next/link';
 
 const dateNow = new Date().toLocaleDateString();
 
@@ -113,14 +114,16 @@ export default function PersonalChatPage() {
               alignItems="center"
               justifyContent="space-between"
             >
-              <IconButton
-                variant="outline"
-                colorScheme="whiteAlpha"
-                aria-label=""
-                fontSize="20px"
-                size="sm"
-                icon={<ArrowBackIcon />}
-              />
+              <Link href="/ChatApp/">
+                <IconButton
+                  variant="outline"
+                  colorScheme="whiteAlpha"
+                  aria-label=""
+                  fontSize="20px"
+                  size="sm"
+                  icon={<ArrowBackIcon />}
+                />
+              </Link>
               <Text>{dateNow}</Text>
               <Text>{sender}</Text>
             </Stack>
